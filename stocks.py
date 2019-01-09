@@ -17,3 +17,17 @@ for purchase in purchases:
   purch_price = purchase[3]
   full_purchase_price = no_of_shares * purch_price
   print(f"I purchased {full_name} stock on {purch_date} for ${full_purchase_price}.")
+
+  try:
+    report[abbrev].append(purchase)
+  except KeyError:
+    report[abbrev] = list()
+    report[abbrev].append(purchase)
+
+for abbrev, purchases in report.items():
+   print(f"-------{abbrev}-------")
+   total_portfolio_stock_value = 0
+   for purchase in purchases:
+     total_portfolio_stock_value += purchase[1] * purchase[3]
+     print(f"     {purchase}")   
+   print(f"Total value of stock in portfolio: ${total_portfolio_stock_value}\n\n")   
