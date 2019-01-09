@@ -24,10 +24,10 @@ for purchase in purchases:
     report[abbrev] = list()
     report[abbrev].append(purchase)
 
-for abbrev, purchases in report.items():
+for abbrev, purchase_list in report.items():
    print(f"-------{abbrev}-------")
    total_portfolio_stock_value = 0
-   for purchase in purchases:
+   for purchase in purchase_list:
      total_portfolio_stock_value += purchase[1] * purchase[3]
-     print(f"     {purchase}")   
+     print(f"{purchase}")   
    print(f"Total value of stock in portfolio: ${total_portfolio_stock_value}\n\n")   
