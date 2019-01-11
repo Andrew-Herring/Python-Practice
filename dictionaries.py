@@ -31,3 +31,8 @@ for abbrev, purchase_list in report.items():
      total_portfolio_stock_value += purchase[1] * purchase[3]
      print(f"{purchase}")   
    print(f"Total value of stock in portfolio: ${total_portfolio_stock_value}\n\n")   
+
+
+  #  ===================
+
+  
