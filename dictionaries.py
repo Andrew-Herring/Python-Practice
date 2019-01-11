@@ -33,6 +33,39 @@ for abbrev, purchase_list in report.items():
    print(f"Total value of stock in portfolio: ${total_portfolio_stock_value}\n\n")   
 
 
-  #  ===================
+# ==== Family Dictionary ====
+print("-- Family Dictionary --")
 
+# Define a dictionary that contains information about several members of your family.
+
+my_family = {
+    'Father': {
+        'name': 'Kevin',
+        'age': 60
+    },
+    'Mother': {
+        'name': 'Amanda',
+        'age': 60
+    },
+    'Brother': {
+        'name': 'Kyle',
+        'age': 25
+    },
+    'Girlfriend': {
+        'name': 'Lacey',
+        'age': 27
+    }
+}
+
+# Using a dictionary comprehension, produce output that looks like the following example.
+# "Kyle is my brother and is 25 years old"
+
+family_speach = set()
+
+for family_member, member_values in my_family.items():
+  family_speach.add(f"{member_values['name']} is my {family_member} and is {str(member_values['age'])} years old")
+
+print(family_speach)
   
+
+

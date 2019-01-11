@@ -1,4 +1,3 @@
-
 # Create a tuple named zoo that contains your favorite animals.
 zoo = ("Dragon", "Siren", "Werewolf", "Troll", "Mothra", "Kraken", "Minotaur")
 print("Our strange little zoo", zoo)
