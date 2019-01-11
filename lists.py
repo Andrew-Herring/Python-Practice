@@ -31,3 +31,15 @@ del planet_list[8]
 # finished product
 
 print(planet_list)
+
+# Challenge: Iterating over planets
+
+# Create another list containing tuples. Each tuple will hold the name of a spacecraft that we have launched, and the names of the planet(s) that it has visited, or landed on. (e.g. ('Cassini', 'Saturn')).
+
+flying_things = [("Cassini", "Saturn"), ("Curiosity", "Mars"), ("Yutu", "Moon")]
+
+# Iterate over your list of planets, and inside that loop, iterate over the list of tuples. Print, for each planet, which satellites have visited it.
+
+for ships in flying_things:
+  for planets in flying_things:
+    print("The {0} visited {1}")
