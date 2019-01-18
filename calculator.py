@@ -17,3 +17,14 @@ class Calculator():
         """
 
         return firstOperand + secondOperand
+
+
+     def subtract(self, firstOperand, secondOperand):
+        """Subtracts two numbers together
+
+        Arguments:
+          firstOperand - Any number
+          secondOperand - An number
+        """
+
+        return firstOperand - secondOperand
